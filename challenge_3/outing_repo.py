@@ -1,4 +1,4 @@
- from outing import Outing
+from outing import Outing
 
 
 '''
@@ -17,14 +17,14 @@ def get_outings():
 
 
 def total_cost():
-    total = 0
+    total = ()
     for event in outings:
         total += event.total_cost
     return total 
 
 
 def total_by_type(event):
-    total = 0
+    total = ()
     for event_outing in outings:
         if event_outing.event_type == event:
             total += event_outing.total_cost

@@ -14,19 +14,17 @@ class ChallengeThreeTests(unittest.TestCase):
         self.assertEqual(actual, expected)
     def test_get_outings_is_list(self):
         # arrange
-        
-
         # act
         actual = type(outing_repo.get_outings())
         expected = type([])
         # assert
         self.assertEqual(actual, expected)
-
     def test_get_total_cost_of_outing(self):
         # arrange
         # act
-        actual = type
-        expected = 
+        outing_repo.total_by_type(500)
+        actual = len(outing_repo.outings)
+        expected = 1
 
         # assert
         self.assertEqual(actual, expected)
